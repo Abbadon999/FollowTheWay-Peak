@@ -1,0 +1,68 @@
+# Build outputs
+bin/
+obj/
+*.dll
+*.pdb
+*.exe
+
+# Visual Studio / Rider
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.cache
+*.tmp
+
+# API Keys - NEVER COMMIT THESE!
+src/Config/ApiKeys.cs
+ApiKeys.cs
+**/ApiKeys.cs
+!**/ApiKeys.cs.template
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Unity specific (if needed)
+Library/
+Temp/
+Logs/
+
+# NuGet
+packages/
+*.nupkg
+
+# Build artifacts
+dist/
+release/
+publish/
+
+# Test results
+TestResults/
+*.trx
+*.coverage
+
+# Backup files
+*.bak
+*.backup
+*~
