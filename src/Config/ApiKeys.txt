@@ -1,0 +1,26 @@
+﻿namespace FollowTheWay.Config
+{
+    /// <summary>
+    /// API Keys configuration for FollowTheWay services
+    /// Copy ApiKeys.cs.template to ApiKeys.cs and fill in your API keys
+    /// </summary>
+    public static class ApiKeys
+    {
+        /// <summary>
+        /// API key for FollowTheWay server (followtheway.ru)
+        /// Get your API key from: https://followtheway.ru/api/keys
+        /// </summary>
+        public static readonly string FollowTheWayApiKey = "a9a27346b1ddde7e080da63f393c35866e5a1144a0f4fba3303092adba1f6ac5";
+
+        /// <summary>
+        /// Backup server API key (if needed)
+        /// </summary>
+        public static readonly string BackupServerApiKey = "";
+
+        /// <summary>
+        /// Check if API keys are configured
+        /// </summary>
+        public static bool IsConfigured => !string.IsNullOrEmpty(FollowTheWayApiKey) &&
+                                          FollowTheWayApiKey != "a9a27346b1ddde7e080da63f393c35866e5a1144a0f4fba3303092adba1f6ac5";
+    }
+}
